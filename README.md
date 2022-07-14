@@ -10,14 +10,15 @@ Essa será uma aplicação onde o seu principal objetivo é criar um blog de 
 - Typescript
 - Stripe API
 - Fauna DB
+- Prismic CMS
 
 ## Estilização
 - SCSS
 
 ## Autenticação social
-- NEXT AUTH (GITHUB)
+- Next Auth (GITHUB)
 
-### DEMO DA APLICAÇÃO
+### Demo
 https://ig-news-swart-eight.vercel.app/
 
 ### Home
