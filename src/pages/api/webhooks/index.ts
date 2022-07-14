@@ -71,7 +71,7 @@ const webhooks = async (request: NextApiRequest, response: NextApiResponse) => {
         }
         return response.json({ received: true });
     }
-    return response.json({ ok: true });
+    return response.json({ received: true });
 }
 
 export default webhooks;
