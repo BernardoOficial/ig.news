@@ -26,9 +26,9 @@ export default function Post({ post }: PostProps) {
     const router = useRouter();
 
     useEffect(() => {
-        // if(!session?.activeSubscription) {
-        //     router.push(`/posts/preview/${post.uid}`);
-        // }
+        if(!session?.activeSubscription) {
+            router.push(`/posts/preview/${post.uid}`);
+        }
     }, [post.uid, router, session]);
 
     function createMarkupContent() {
@@ -63,18 +63,7 @@ export default function Post({ post }: PostProps) {
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ req, params, previewData }) => {
-    const session = await getSession({ req });
     const { uid } = params;
-
-    if(!session?.activeSubscription) {
-        return {
-            redirect: {
-                destination: `/`,
-                permanent: false,
-            }
-        }
-    }
-
     const client = getPrismicClient({ previewData });
     const post = await client.getByUID<any>("posts", String(uid));
     const postFormatted = formatPostsProperties([post], { isPreview: false });
