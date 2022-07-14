@@ -1,0 +1,36 @@
+{
+  "id": "11698ce6-67a8-47f9-abd6-15628072fbad",
+  "uid": "magnam-sit-enim",
+  "type": "posts",
+  "data": {
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Whiteboard strategic users",
+        "spans": []
+      }
+    ],
+    "content": [
+      {
+        "type": "heading1",
+        "text": "Disintermediate back-end portals",
+        "spans": []
+      },
+      {
+        "type": "image",
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=900&h=500&fit=crop"
+      },
+      {
+        "type": "paragraph",
+        "text": "Qui proident anim ad enim consequat consequat eiusmod excepteur enim occaecat pariatur ipsum tempor. Ea dolor qui excepteur irure id commodo quis laboris veniam.",
+        "spans": []
+      }
+    ]
+  }
+}

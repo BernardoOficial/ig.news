@@ -1,0 +1,48 @@
+.button-logged,
+.button-logout {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.75rem 1rem;
+    border-radius: 100px;
+    background-color: var(--gray-800);
+    transition: 0.3s ease;
+
+    .icon,
+    .close {
+        
+        max-width: 24px;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 1rem;
+    }
+
+    .close {
+        margin-left: 1rem;
+        margin-right: 0px;
+    }
+
+    .label {
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: 0px;
+        color: var(--gray-100);
+        flex: 1 0;
+    }
+
+}
+
+.button-logged {
+    &:hover {
+        background-color: var(--white);
+        .label { color: var(--yellow-800); }
+    }
+}
+
+.button-logout {
+    &:hover {
+        background-color: var(--white);
+        .label { color: var(--green-600); }
+    }
+}
